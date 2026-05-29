@@ -48,10 +48,10 @@ function TypewriterRole() {
 }
 
 const socials = [
-  { icon: FiGithub, href: 'https://github.com/amankoli', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/in/amankoli', label: 'LinkedIn' },
+  { icon: FiGithub, href: 'https://github.com/amankoli09', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/aman-koli-773510331/', label: 'LinkedIn' },
   { icon: FiInstagram, href: 'https://instagram.com/amankoli', label: 'Instagram' },
-  { icon: FiMail, href: 'mailto:aman@example.com', label: 'Email' },
+  { icon: FiMail, href: 'mailto:amankoli1206@gmail.com', label: 'Email' },
 ]
 
 export default function Hero() {
