@@ -3,15 +3,22 @@ import { useRef, useState } from 'react'
 import { FiExternalLink, FiGithub, FiArrowRight } from 'react-icons/fi'
 import { SiReact, SiJavascript, SiTailwindcss, SiCplusplus, SiFramer, SiVite } from 'react-icons/si'
 
+// Import project images so they get bundled by Vite during deployment
+import bawImg from '../images/BAW.webp'
+import elImg from '../images/El.png'
+import secureVerseImg from '../images/SecureVerse.png'
+import portfolioImg from '../images/Portfolio.png'
+import blenderImg from '../images/blender.webp'
+
 const techIcons = { React: SiReact, JavaScript: SiJavascript, Tailwind: SiTailwindcss, 'C++': SiCplusplus, 'Framer Motion': SiFramer, Vite: SiVite }
 
 const projects = [
-  { title: 'Business Analytical Website', desc: 'A comprehensive business analytics dashboard with real-time data visualization, interactive charts, KPI metrics, and advanced filtering capabilities.', tags: ['React', 'Tailwind', 'Analytics', 'Dashboard'], category: 'Frontend', featured: true, accentColor: '#3b82f6', image: '/src/images/BAW.webp', github: 'https://tableau-website.vercel.app/' },
-  { title: 'AI Speaking Assistant EL', desc: 'A futuristic voice-interface concept with animated orb, waveform visualization, and AI response display.', tags: ['React', 'Framer Motion', 'JavaScript', 'Tailwind'], category: 'AI', featured: true, accentColor: '#7c5cbf', image: '/src/images/El.png', github: 'https://github.com/amankoli09/AI-Speaking-Assistant' },
-  { title: 'SecureVerse Concept', desc: 'A cybersecurity dashboard concept with real-time threat monitoring, glassmorphism UI, and animated data flows.', tags: ['React', 'Tailwind', 'JavaScript'], category: 'Security', featured: true, accentColor: '#34d399', image: '/src/images/SecureVerse.png' },
+  { title: 'Business Analytical Website', desc: 'A comprehensive business analytics dashboard with real-time data visualization, interactive charts, KPI metrics, and advanced filtering capabilities.', tags: ['React', 'Tailwind', 'Analytics', 'Dashboard'], category: 'Frontend', featured: true, accentColor: '#3b82f6', image: bawImg, github: 'https://tableau-website.vercel.app/' },
+  { title: 'AI Speaking Assistant EL', desc: 'A futuristic voice-interface concept with animated orb, waveform visualization, and AI response display.', tags: ['React', 'Framer Motion', 'JavaScript', 'Tailwind'], category: 'AI', featured: true, accentColor: '#7c5cbf', image: elImg, github: 'https://github.com/amankoli09/AI-Speaking-Assistant' },
+  { title: 'SecureVerse Concept', desc: 'A cybersecurity dashboard concept with real-time threat monitoring, glassmorphism UI, and animated data flows.', tags: ['React', 'Tailwind', 'JavaScript'], category: 'Security', featured: true, accentColor: '#34d399', image: secureVerseImg },
   { title: 'Modern Dashboard UI', desc: 'A sleek analytics dashboard with dark theme, animated charts, metric cards, and a collapsible sidebar.', tags: ['React', 'Tailwind', 'Vite', 'JavaScript'], category: 'Frontend', featured: false, accentColor: '#e8917a', image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Portfolio Website', desc: 'This very portfolio — built with React, Vite, Tailwind, and Framer Motion. Fully responsive premium design.', tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'], category: 'Frontend', featured: false, accentColor: '#9b72cf', image: '/src/images/Portfolio.png', github: 'https://amankoliportfolio-zeta-one-20.vercel.app/' },
-  { title: 'Blender 3D Projects', desc: 'A collection of professional 3D renders and animations: character modeling, product visualization, architectural renders, and motion graphics.', tags: ['Blender', '3D Modeling', 'Rendering', 'Animation'], category: '3D', featured: false, accentColor: '#f97316', image: '/src/images/blender.webp', github: 'https://github.com/amankoli09/Blender' },
+  { title: 'Portfolio Website', desc: 'This very portfolio — built with React, Vite, Tailwind, and Framer Motion. Fully responsive premium design.', tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'], category: 'Frontend', featured: false, accentColor: '#9b72cf', image: portfolioImg, github: 'https://amankoliportfolio-zeta-one-20.vercel.app/' },
+  { title: 'Blender 3D Projects', desc: 'A collection of professional 3D renders and animations: character modeling, product visualization, architectural renders, and motion graphics.', tags: ['Blender', '3D Modeling', 'Rendering', 'Animation'], category: '3D', featured: false, accentColor: '#f97316', image: blenderImg, github: 'https://github.com/amankoli09/Blender' },
 ]
 
 const categories = ['All', 'AI', 'Frontend', 'Security', 'Programming', '3D']
