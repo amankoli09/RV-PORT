@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #faf8f5;
+    --color-surface: #f5f0eb;
+    --color-card: #ffffff;
+    --color-border: rgba(120, 90, 200, 0.1);
+    --color-glow: rgba(120, 90, 200, 0.15);
+    --color-primary: #7c5cbf;
+    --color-accent: #9b72cf;
+    --color-secondary: #e8917a;
+    --color-text: #2d2640;
+    --color-muted: #7a7088;
+    --color-highlight: #f0ebf8;
+    --font-display: var(--font-share-tech);
+    --font-body: var(--font-share-tech);
+    --font-logo-sans: var(--font-share-tech);
+    --font-logo-script: 'Alex Brush', cursive;
+
+    /* Monospace / Tech / Roblox Cubic font families */
+    --font-share-tech: 'Share Tech Mono', monospace;
+    --font-space-mono: 'Space Mono', monospace;
+    --font-pixelify: 'Pixelify Sans', sans-serif;
+    --font-jetbrains: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%; /* Slightly adjusted base size for monospace */
+    letter-spacing: -0.01em;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(120, 90, 200, 0.3);
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background: rgba(120, 90, 200, 0.2);
+    color: var(--color-text);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(120, 90, 200, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(120, 90, 200, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 40px rgba(120, 90, 200, 0.25);
+  }
+
+  .glow-box {
+    box-shadow: 0 0 24px rgba(120, 90, 200, 0.1), 0 4px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .glow-button {
+    box-shadow: 0 0 20px rgba(120, 90, 200, 0.2), 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #7c5cbf 0%, #9b72cf 40%, #e8917a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-name {
+    background: linear-gradient(135deg, #7c5cbf 0%, #b08ad8 50%, #e8917a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-right: 0.1em;
+  }
+
+  .section-heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
