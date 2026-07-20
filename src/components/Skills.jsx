@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { SiReact, SiJavascript, SiHtml5, SiTailwindcss, SiCplusplus, SiGit, SiGithub, SiVite, SiFramer } from 'react-icons/si'
-import { FiCode } from 'react-icons/fi'
+import { SiReact, SiJavascript, SiHtml5, SiTailwindcss, SiCplusplus, SiGit, SiGithub, SiVite, SiFramer, SiMongodb, SiStellar } from 'react-icons/si'
+import { FiCode, FiLayers, FiBox, FiTrendingUp, FiKey, FiLock } from 'react-icons/fi'
 
 const skillGroups = [
   {
@@ -16,10 +16,23 @@ const skillGroups = [
     ],
   },
   {
-    category: 'Programming',
+    category: 'Web3 & Blockchain',
+    skills: [
+      { name: 'Blockchain', icon: FiLayers, level: 85, color: '#7c5cbf' },
+      { name: 'Stellar', icon: SiStellar, level: 90, color: '#000000' },
+      { name: 'Soroban', icon: FiCode, level: 85, color: '#e8917a' },
+      { name: 'dApps', icon: FiBox, level: 80, color: '#9b72cf' },
+      { name: 'DeFi', icon: FiTrendingUp, level: 80, color: '#7c5cbf' },
+      { name: 'ZK', icon: FiKey, level: 75, color: '#e8917a' },
+      { name: 'Noir', icon: FiLock, level: 75, color: '#2d2640' },
+    ],
+  },
+  {
+    category: 'Programming & DB',
     skills: [
       { name: 'C++', icon: SiCplusplus, level: 85, color: '#7c5cbf' },
       { name: 'Framer Motion', icon: SiFramer, level: 78, color: '#e8917a' },
+      { name: 'MongoDB', icon: SiMongodb, level: 88, color: '#47A248' },
     ],
   },
   {
@@ -73,7 +86,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillGroups.map((group, gi) => (
             <motion.div key={group.category}
               initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}}
