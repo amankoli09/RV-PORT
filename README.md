@@ -1,7 +1,6 @@
-# Aman Koli — React Developer Portfolio
+## Aman Koli — React Developer Portfolio
 
 A premium, highly interactive, and responsive developer portfolio showcasing projects, skills, and open-source contributions. 
-
 Built with modern web technologies, sleek dark-mode glassmorphic aesthetics, and customized typography.
 
 ### Live : https://amankoli.vercel.app/
