@@ -82,7 +82,7 @@ export default function Projects() {
                   })}
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href={project.github || 'https://github.com/amankoli'} target="_blank" rel="noreferrer"
+                  <a href={project.github || 'https://github.com/amankoli09'} target="_blank" rel="noreferrer"
                     className="flex items-center gap-1.5 text-xs font-medium" style={{ color: 'var(--color-muted)' }}>
                     <FiGithub size={13} />Code</a>
                   <a href="#" className="flex items-center gap-1.5 text-xs font-medium" style={{ color: 'var(--color-primary)' }}>
@@ -95,7 +95,7 @@ export default function Projects() {
 
         <motion.div initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ delay: 0.8 }}
           className="flex justify-center mt-10">
-          <a href="https://github.com/amankoli" target="_blank" rel="noreferrer"
+          <a href="https://github.com/amankoli09" target="_blank" rel="noreferrer"
             className="flex items-center gap-2 px-6 py-2.5 rounded-xl glass-card text-sm font-medium transition-all duration-200 hover:glow-box"
             style={{ color: 'var(--color-primary)' }}>View All on GitHub <FiArrowRight size={14} /></a>
         </motion.div>
